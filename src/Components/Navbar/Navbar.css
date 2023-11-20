@@ -1,0 +1,157 @@
+.navbar {
+    z-index: 1;
+    display: flex;
+    width: 98%;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #7ecaa9;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px rgba(100, 139, 75, 0.7));
+    position: fixed;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-logo img{
+    width: 200px;
+    height: 40px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: #effff9;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 5px;
+}
+
+
+.active {
+    width: 100%;
+    height: 20px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #baf0d8, #9dcab6);
+    box-shadow:  20px 20px 60px #94beac,
+                 -20px -20px 60px #c8ffe8;    
+    margin-top: -35px;
+    padding:5px;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    z-index: -2;
+    color: white;
+}
+
+.nav-login-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 15px;
+}
+
+.nav-login-cart img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-login-cart button img {
+    width: 20px;
+    height: 25px;
+    border: none;
+}
+
+.user-button {
+    border: none;
+    background-color: #10898d00;
+}
+
+.user-button:active {
+    transform:translateY(1px);
+}
+
+.nav-login-cart .searchBox {
+    position: relative;
+    background: #effff9;
+    height: 35px;
+    border-radius: 35px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 190px;
+    padding: 0px 20px;
+}
+
+.searchBox:hover > .searchButton {
+  background: #7ecaa9;
+}
+
+.searchButton {
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #7ecaa9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: #7ecaa9;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}
+
+.nav-cart-count {
+    width: 18px;
+    height: 18px;
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -20px;
+    border-radius: 50%;
+    font-size: 10px;
+}
